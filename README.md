@@ -1,4 +1,5 @@
 ### SetUp
+```
 1. ubuntu installs anaconda3 5.X
 2. build virtual envs  
    >  conda create -n bagreid python=3.6  
@@ -7,7 +8,9 @@
    >  conda install pytorch torchvision cudatoolkit=9.0 -c pytorch 
    >  conda install pandas
    >  pip install tensorboardX yacs
+```
 ### Usage
+```
    > cd Bag_ReID
    > mkdir data 
    > mv MVB_train/Image data/MVB/bounding_box_train
@@ -17,7 +20,7 @@
    > mv MVB_val/Image/probe data/MVB/probe
    > mv MVB_val/Info/val_probe.json data/MVB/val_probe.json
    > python evaluator.py
-
+```
 ### Result
 
 |            | Rank-1 | Rank-3 | Rank-5 | Rank-10 |
