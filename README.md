@@ -15,8 +15,8 @@
 ### Data preparation
 ```
 1. download mvb dataset from http://volumenet.cn/#/
-2.
-   > cd Bag_ReID
+2. > git clone https://github.com/wuyuejinxia/prcv2019-mvb-renet.git
+   > cd prcv2019-mvb-renet
    > mkdir data 
    > mv MVB_train/Image data/MVB/bounding_box_train
    > mv MVB_train/Info/train.json data/MVB/train.json
@@ -27,7 +27,7 @@
 ```
 
 ### Train
-```
+``` 
    > python train.py
 ```
 ### Result
@@ -37,4 +37,19 @@
 | 2019-07-27 | 84.32% | 94.20% | 96.67% | 98.76%  |
 | 2019-08-20 | 84.98% | 95.44% | 97.24% | 98.86%  |
 | 2019-08-29 | 88.69% | 96.20% | 98.38% | 99.05%  |
+
+### Citation
+```
+You are encouraged to cite the following papers if this work helps your research.
+@misc{zhang2019mvb,
+      title={MVB: A Large-Scale Dataset for Baggage Re-Identification and Merged Siamese Networks},
+      author={Zhulin Zhang and Dong Li and Jinhua Wu and Yunda Sun and Li Zhang},
+      year={2019},
+      eprint={1907.11366},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+     }
+url: https://arxiv.org/abs/1907.11366
+```
+
 
