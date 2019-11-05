@@ -8,9 +8,14 @@
    >  conda install pytorch torchvision cudatoolkit=9.0 -c pytorch 
    >  conda install pandas
    >  pip install tensorboardX yacs
+4. > git clone https://github.com/NVIDIA/apex
+   > cd apex
+   > pip install -v --no-cache-dir ./
 ```
-### Usage
+### Data preparation
 ```
+1. download mvb dataset from http://volumenet.cn/#/
+2.
    > cd Bag_ReID
    > mkdir data 
    > mv MVB_train/Image data/MVB/bounding_box_train
@@ -19,7 +24,11 @@
    > mv MVB_val/Info/val_gallery.json data/MVB/val_gallery.json
    > mv MVB_val/Image/probe data/MVB/probe
    > mv MVB_val/Info/val_probe.json data/MVB/val_probe.json
-   > python evaluator.py
+```
+
+### Train
+```
+   > python train.py
 ```
 ### Result
 
